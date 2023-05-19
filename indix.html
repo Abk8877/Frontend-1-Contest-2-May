@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Books {
+
+
+            border: 5px solid;
+            margin: auto;
+            margin-top: 150px;
+            width: 45%;
+            padding-right: 0%;
+
+        }
+
+        #Register {
+            border: 5px solid;
+            margin: auto;
+            margin-top: 150px;
+            width: 45%;
+            padding-right: 0%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 2px;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        #nav_item {
+            float: right;
+
+        }
+
+        li {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+
+        }
+
+        a {
+
+            /* display: block; */
+            color: white;
+            text-align: center;
+            /* padding: 14px 16px; */
+            text-decoration: none;
+
+        }
+
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Library System</li>
+        <li id="nav_item">Log Out</li>
+        <li id="nav_item">Contact Us</li>
+        <li id="nav_item"><a href="#Register">Register</a></li>
+        <li id="nav_item"><a href="#Books">Books</a></li>
+
+
+
+    </ul>
+
+    <section id="Books">
+        <h2>Books</h2>
+        <table>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availability</th>
+            </tr>
+            <tr>
+                <th>1.</th>
+                <th>I Feel Bad About My Neck
+                    <table>
+                        <tr>
+                            <td>Date :2000</td>
+                        </tr>
+                        <tr>
+                            <td>Page count : 250</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN : 646545645</td>
+                        </tr>
+                    </table>
+                </th>
+                <th>Nora Ephron</th>
+                <th>Humor</th>
+                <th>Available</th>
+            </tr>
+            <tr>
+                <th>2.</th>
+                <th>Wolf Hall
+                    <table>
+                        <tr>
+                            <td>Date :2000</td>
+                        </tr>
+                        <tr>
+                            <td>Page count : 250</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN : 646545645</td>
+                        </tr>
+                    </table>
+                </th>
+                <th>Hilary Mantel</th>
+                <th> Novel</th>
+                <th> Not Available</th>
+            </tr>
+            <tr>
+                <th>3.</th>
+                <th>Title 3
+                    <table>
+                        <tr>
+                            <td>Date :2000</td>
+                        </tr>
+                        <tr>
+                            <td>Page count : 250</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN : 646545645</td>
+                        </tr>
+                    </table>
+                </th>
+                <th>Author 3</th>
+                <th>Genre 3</th>
+                <th>Availability 3</th>
+            </tr>
+            <tr>
+                <th>4.</th>
+                <th>Title 4
+                    <table>
+                        <tr>
+                            <td>Date :2000</td>
+                        </tr>
+                        <tr>
+                            <td>Page count : 250</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN : 646545645</td>
+                        </tr>
+                    </table>
+                </th>
+                <th>Author 4</th>
+                <th>Genre 4</th>
+                <th>Availability 4</th>
+            </tr>
+            <tr>
+                <th>5. </th>
+                <th>Title 5
+                    <table>
+                        <tr>
+                            <td>Date :2000</td>
+                        </tr>
+                        <tr>
+                            <td>Page count : 250</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN : 646545645</td>
+                        </tr>
+                    </table>
+                </th>
+                <th>Author 5</th>
+                <th>Genre 5</th>
+                <th>Availability 5</th>
+            </tr>
+        </table>
+    </section>
+    <section id="Register">
+        <table>
+            <h2>Register</h2>
+            <form>
+                <label for="fname">First Name:</label><br>
+                <input type="text" name="fname" required>
+                <br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" name="lname" required>
+                <br>
+                <label for="DOB">Date of birth:</label><br>
+                <input type="date" name="DOB" required>
+                <br>
+                <label for="age">Age:</label><br>
+                <input type="number" name="age" min="5" max="100" required>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" required>
+                <br>
+                <label for="password">Password:</label><br>
+                <input type="password" name="Confirm password" required>
+                <br>
+                <label for="Cpassword">Confirm Password:</label><br>
+                <input type="password" name="Cpassword" required>
+                <br>
+                <button type="submit">Register</button>
+            </form>
+            </form>
+
+        </table>
+    </section>
+</body>
+
+</html>
